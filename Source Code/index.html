@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <script src="https://kit.fontawesome.com/bf4c2bff60.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Form Validation</h2>
+        <form action="" class="form">
+            <div class="form-control">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username">
+                <i class="fas fa-check"></i>
+                <i class="fas fa-times"></i>
+                <small>Error Message</small>
+            </div>
+
+            <!-- email -->
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email">
+                <i class="fas fa-check"></i>
+                <i class="fas fa-times"></i>
+                <small>Error Message</small>
+            </div>
+
+            <!-- password -->
+            <div class="form-control">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+                <i class="fas fa-check"></i>
+                <i class="fas fa-times"></i>
+                <small>Error Message</small>
+            </div>
+
+            <!-- confirm -->
+            <div class="form-control">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" name="confirmPassword" id="confirmPassword">
+                <i class="fas fa-check"></i>
+                <i class="fas fa-times"></i>
+                <small>Error Message</small>
+            </div>
+            <button type="button" class="btn" onclick="validform()">Login</button>
+        </form>
+
+
+
+    </div>
+
+    <!-- scripts -->
+    <script src="./jquery-3.6.0.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>

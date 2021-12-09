@@ -1,0 +1,114 @@
+/* imports */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    width: 430px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+.container h2 {
+    text-align: center;
+    margin: 30px;
+    font-weight: 800;
+    font-family: 'Inter' verdana;
+}
+
+.form {
+    padding: 30px 40px;
+}
+
+.form-control {
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.form-control label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-control input {
+    padding: 10px 5px;
+    width: 100%;
+    border: 1px solid #6a68df;
+    font-size: 19px;
+}
+
+.form-control input:focus {
+    outline: none;
+}
+
+.form-control i.fa-check {
+    position: absolute;
+    top: 40px;
+    text-align: right;
+    bottom: 0;
+    right: 10px;
+    color: #31ce15;
+    visibility: hidden;
+}
+
+.form-control i.fa-times {
+    position: absolute;
+    top: 40px;
+    text-align: right;
+    bottom: 0;
+    right: 10px;
+    color: #ec5e36;
+    visibility: hidden;
+}
+
+.form-control small {
+    margin-top: 10px;
+    color: #ec5e36;
+    font-weight: bold;
+    visibility: hidden;
+}
+
+.form .btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #e68484;
+    color: #fff;
+    outline: none;
+    border: 1px solid #e68484;
+    cursor: pointer;
+    font-size: 19px;
+    transition: 0.6s ease-out;
+}
+
+.form .btn:hover {
+    background-color: #7b4747;
+    color: #fff;
+    border: 1px solid #e68484;
+}
+
+.form-control.err input {
+    border: 1px solid #ec5e36;
+}
+
+.form-control.err small {
+    visibility: visible;
+}
+
+.form-control.success input {
+    border: 1px solid #31ce15;
+}
